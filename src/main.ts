@@ -4,6 +4,8 @@ import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
 
+let currentPopup: any = undefined;
+
 // Waiting for the API to be ready
 WA.onInit().then(() => {
     console.log('Scripting API ready');
@@ -20,7 +22,21 @@ WA.onInit().then(() => {
         mute : false
     }
     globalSound.play(config);
-    
+
+    WA.room.onEnterLayer('Settings/zonePopupBoat').subscribe(() => {
+        currentPopup = WA.ui.openPopup("popupBoat","To complete !",[]);
+    })
+    WA.room.onLeaveLayer('Settings/zonePopupBoat').subscribe(closePopUp)
+
+    WA.room.onEnterLayer('Settings/zonePopupEntranceBoat').subscribe(() => {
+        currentPopup = WA.ui.openPopup("popupEntranceBoat","To complete !",[]);
+    })
+    WA.room.onLeaveLayer('Settings/zonePopupEntranceBoat').subscribe(closePopUp)
+
+    WA.room.onEnterLayer('Settings/zonePopupIntro').subscribe(() => {
+        currentPopup = WA.ui.openPopup("popupIntro","To complete !",[]);
+    })
+    WA.room.onLeaveLayer('Settings/zonePopupIntro').subscribe(closePopUp)
 
     WA.room.onEnterLayer('Settings/zoneBuilding').subscribe(() => {
         WA.room.showLayer("InAbove/inBuilding1");
@@ -113,5 +129,12 @@ WA.onInit().then(() => {
     }).catch(e => console.error(e));
 
 }).catch(e => console.error(e));
+
+function closePopUp(){
+    if (currentPopup !== undefined) {
+        currentPopup.close();
+        currentPopup = undefined;
+    }
+}
 
 export {};
