@@ -34,9 +34,15 @@ WA.onInit().then(() => {
     WA.room.onLeaveLayer('Settings/zonePopupEntranceBoat').subscribe(closePopUp)
 
     WA.room.onEnterLayer('Settings/zonePopupIntro').subscribe(() => {
-        currentPopup = WA.ui.openPopup("popupIntro","To complete !",[]);
+        currentPopup = WA.ui.openPopup("popupIntro","Welcome Habbo Adventurers! You found a pirate island. Are you ready for a treasure hunt?",[]);
     })
     WA.room.onLeaveLayer('Settings/zonePopupIntro').subscribe(closePopUp)
+
+
+    WA.room.onEnterLayer('Settings/zonePopupCave').subscribe(() => {
+        currentPopup = WA.ui.openPopup("popupCave","It looks like this cavern is blocked from within. There might be a way to open it (coming soon)",[]);
+    })
+    WA.room.onLeaveLayer('Settings/zonePopupCave').subscribe(closePopUp)
 
     WA.room.onEnterLayer('Settings/zoneBuilding').subscribe(() => {
         WA.room.showLayer("InAbove/inBuilding1");
