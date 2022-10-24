@@ -11,7 +11,7 @@ WA.onInit().then(() => {
     console.log('Scripting API ready');
     console.log('Player tags: ',WA.player.tags)
 
-    var globalSound = WA.sound.loadSound("src/ocean.wav");
+    var globalSound = WA.sound.loadSound("https://github.com/HugoAverty/wa-habbo/raw/master/src/ocean.wav");
     var config = {
         volume : 0.01,
         loop : true,
