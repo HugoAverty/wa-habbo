@@ -13,7 +13,7 @@ WA.onInit().then(() => {
 
     var globalSound = WA.sound.loadSound("https://github.com/HugoAverty/wa-habbo/raw/master/src/ocean.wav");
     var config = {
-        volume : 0.01,
+        volume : 0.5,
         loop : true,
         rate : 1,
         detune : 1,
@@ -106,6 +106,8 @@ WA.onInit().then(() => {
         WA.room.hideLayer("OutAbove/outBoatAbove4");
         WA.room.hideLayer("OutAbove/outBoatAbove5");
         WA.room.hideLayer("OutAbove/outBoatAbove6");
+        WA.room.hideLayer("Clouds");
+        WA.room.hideLayer("Lights");
     })
 
     WA.room.onLeaveLayer('Settings/zoneBoat').subscribe(() => {
@@ -127,6 +129,8 @@ WA.onInit().then(() => {
         WA.room.showLayer("OutAbove/outBoatAbove4");
         WA.room.showLayer("OutAbove/outBoatAbove5");
         WA.room.showLayer("OutAbove/outBoatAbove6");
+        WA.room.showLayer("Clouds");
+        WA.room.showLayer("Lights");
     })
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
