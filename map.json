@@ -486,7 +486,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"map.json#inEntryBoatScale"
+                 "value":"\/@\/habbo#inEntryBoatScale"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -504,7 +504,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"map.json#inEntryBoatStrairs"
+                 "value":"\/@\/habbo#inEntryBoatStrairs"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -558,7 +558,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"map.json#outBoatEntryStrairs"
+                 "value":"\/@\/habbo#outBoatEntryStrairs"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -576,7 +576,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"map.json#outBoatEntryScale"
+                 "value":"\/@\/habbo#outBoatEntryScale"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -1207,9 +1207,11 @@
                  "y":0
                 }],
          "name":"OutAbove",
+         "offsetx":2.66666666666663,
+         "offsety":-2.66666666666674,
          "opacity":1,
          "type":"group",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
