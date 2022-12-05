@@ -24,17 +24,17 @@ WA.onInit().then(() => {
     globalSound.play(config);
 
     WA.room.onEnterLayer('Settings/zonePopupBoat').subscribe(() => {
-        currentPopup = WA.ui.openPopup("popupBoat","To complete !",[]);
+        currentPopup = WA.ui.openPopup("popupBoat","Coming soon !",[]);
     })
     WA.room.onLeaveLayer('Settings/zonePopupBoat').subscribe(closePopUp)
 
     WA.room.onEnterLayer('Settings/zonePopupEntranceBoat').subscribe(() => {
-        currentPopup = WA.ui.openPopup("popupEntranceBoat","To complete !",[]);
+        currentPopup = WA.ui.openPopup("popupEntranceBoat","Coming soon !",[]);
     })
     WA.room.onLeaveLayer('Settings/zonePopupEntranceBoat').subscribe(closePopUp)
 
     WA.room.onEnterLayer('Settings/zonePopupIntro').subscribe(() => {
-        currentPopup = WA.ui.openPopup("popupIntro","Welcome Habbo Adventurers! You found a pirate island. Are you ready for a treasure hunt?",[]);
+        currentPopup = WA.ui.openPopup("popupIntro","Welcome Gen 1 holder! This is your community treasur island where we'll host events, gatherings and many experiences with you!",[]);
     })
     WA.room.onLeaveLayer('Settings/zonePopupIntro').subscribe(closePopUp)
 
