@@ -11,7 +11,7 @@ WA.onInit().then(() => {
     console.log('Scripting API ready')
     console.log('Player tags: ',WA.player.tags)
 
-    /*const globalSound = WA.sound.loadSound("ocean.wav")
+    const globalSound = WA.sound.loadSound("ocean.wav")
     const config = {
         volume : 0.3,
         loop : true,
@@ -22,7 +22,6 @@ WA.onInit().then(() => {
         mute : false
     }
     globalSound.play(config)
-*/
 
     // Popups
     WA.room.area.onEnter("intro").subscribe(() => {
