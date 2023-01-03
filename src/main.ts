@@ -11,18 +11,6 @@ WA.onInit().then(() => {
     console.log('Scripting API ready')
     console.log('Player tags: ',WA.player.tags)
 
-    const globalSound = WA.sound.loadSound("ocean.wav")
-    const config = {
-        volume : 0.3,
-        loop : true,
-        rate : 1,
-        detune : 1,
-        delay : 0,
-        seek : 0,
-        mute : false
-    }
-    globalSound.play(config)
-
     // Popups
     WA.room.area.onEnter("intro").subscribe(() => {
         currentPopup = WA.ui.openPopup("introPopup", "Welcome Gen 1 holder! This is your community treasure island where we'll host events, gatherings and many experiences with you!", [])
