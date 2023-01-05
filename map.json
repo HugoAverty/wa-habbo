@@ -1282,9 +1282,9 @@
                  "opacity":1,
                  "properties":[
                         {
-                         "name":"openWebsite",
+                         "name":"openTab",
                          "type":"string",
-                         "value":"https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSctbIEdNLe4Rb8ytAuIc_b8gPfWmY59v0mnoQfIRjs5pfbqIA\/viewform"
+                         "value":"https:\/\/docs.google.com\/presentation\/d\/1xySTahp5QozHEtm_VEp7f8L0-ctMzGeorWRiNmDGjKA\/edit#slide=id.g1c4c674bc81_0_111"
                         }],
                  "type":"tilelayer",
                  "visible":true,
