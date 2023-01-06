@@ -13,8 +13,8 @@ WA.onInit().then(() => {
 
     // Popups
     WA.room.area.onEnter("intro").subscribe(() => {
-        currentPopup = WA.ui.openPopup("introPopup", "Welcome Gen 1 holder! This is your community treasure island where we'll host events, gatherings and many experiences with you!", [])
-    })
+        currentPopup = WA.ui.openPopup("introPopup", "Welcome Gen 1 Holders! This is your treasure island community! Here we will host events, gatherings, and many other opportunities for you!", [])
+    })<<
     WA.room.area.onLeave("intro").subscribe(closePopup)
 
     WA.room.area.onEnter("cave").subscribe(() => {
