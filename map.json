@@ -1167,7 +1167,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"https:\/\/html5.gamescrush.com\/temple-run\/"
+                         "value":"https:\/\/supermarioemulator.com\/mario.php"
                         }],
                  "type":"tilelayer",
                  "visible":true,
@@ -1284,7 +1284,7 @@
                         {
                          "name":"openTab",
                          "type":"string",
-                         "value":"https:\/\/docs.google.com\/presentation\/d\/1xySTahp5QozHEtm_VEp7f8L0-ctMzGeorWRiNmDGjKA\/edit#slide=id.g1c4c674bc81_0_111"
+                         "value":"https:\/\/docs.google.com\/presentation\/d\/13ue-WwjIzlYEaAwAyebzGKy-U4mcKBK5pCY8eO2kSgY\/edit#slide=id.g1c4c674bc81_0_115https:\/\/docs.google.com\/presentation\/d\/13ue-WwjIzlYEaAwAyebzGKy-U4mcKBK5pCY8eO2kSgY\/edit#slide=id.g1c4c674bc81_0_115"
                         }],
                  "type":"tilelayer",
                  "visible":true,
